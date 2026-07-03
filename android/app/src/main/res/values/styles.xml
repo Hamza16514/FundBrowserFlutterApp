@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme applied while the process is starting (OS Dark Mode OFF).
+         Parent changed to Theme.Black so the window background is dark,
+         preventing any white flash before the drawable is drawn. -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@drawable/launch_background</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Theme applied once Flutter starts rendering.
+         windowBackground matches the splash so there is no jump. -->
+    <style name="NormalTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@color/splash_background</item>
+    </style>
+</resources>

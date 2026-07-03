@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Branded splash: deep navy matching the login gradient header -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid navy background — eliminates white flash -->
+    <item android:drawable="@color/splash_background" />
+
+    <!-- Centered app icon -->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@mipmap/ic_launcher" />
+    </item>
+</layer-list>
